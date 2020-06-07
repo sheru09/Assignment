@@ -32,14 +32,14 @@ Below are the set of commands used for deploying the app.py using user data via 
       - sudo yum clean all
       - sudo yum update -y
       - sudo yum install git python36 python36-devel python36-pip -y
-      - git clone https://github.com/ssheru/assignment.git
+      - git clone https://github.com/sheru09/Assignment
       - cd /assignment/test-app/
       - sudo pip-3.6 install -r requirements.txt
       - python3 app.py
 
 ## Deployment Brief:
 I have chosen to go with a very generic deployment for this exercise, this includes--provisioning of AWS ec2 instance using terraform and while provisioning period I have installed all the required pre-requisites explained in the pre-requisite section using the user data through Terraform file function.
-Once the pre-requisites were installed I have cloned the Github repo(https://github.com/ssheru/assignment) and installed all required pip modules from requirement.txt
+Once the pre-requisites were installed I have cloned the Github repo(https://github.com/sheru09/Assignment) and installed all required pip modules from requirement.txt
 Post installing the pip modules I have run the python script(app.py) which got deployed to the flask framework. The application was successfully accessible using  Instance public IP at port 5000.
 
 Note:
